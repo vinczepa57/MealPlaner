@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+}
+
+.backgroundImage {
+    background-image: url(./img/pexels-kaboompics-com-5929.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    opacity: 0.9;
+}
+
+.heading {
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #28df99;
+}
+
+.btn {
+    padding: 15px;
+    margin: 10px auto;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #28df99;
+    border-radius: 5px;
+    border: none;
+}
+.btn :hover{
+    cursor: pointer;
+}
+
+.recepeZone {
+    height: 350px;
+    background-color: #7ea04d;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recepe {
+    font-size: 1.2rem;
+    padding: 10px;
+    display: grid;
+}
+
+.recepe img{
+    width: 260px;
+    margin: auto;
+}

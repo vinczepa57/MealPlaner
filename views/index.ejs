@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <title>MealGenerator</title>
+    </head>
+    <body>
+        <div class="backgroundImage"></div>
+        <div class="heading">
+            <h1>MealGenerator</h1>
+            <form method="POST" action="/">
+                <button class="btn" type="submit">Generate random Mealplan</button>
+                <!--<button class="btn" type="submit">Generate vegeterian Mealplan</button>-->
+            </form>
+        </div>
+        <div class="recepeZone">
+            <% recipes.forEach( recipe => { %>
+            <div class="recepe">
+                <p><%= recipe.title %></p>
+                <img src="<%= recipe.image %>">
+                <button class="btn" style="width: 200px;"><a href="<%= recipe.sourceUrl %>" style="text-align: center; text-decoration: none; color: white;">zum Rezept</a></button>
+            </div>
+            <% }); %>
+        </div>  
+    </body>
+</html>
